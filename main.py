@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 #from flask.wrappers import Request
 import mysql.connector
+#Newline
 
 mydb = mysql.connector.connect(host="localhost", user="root", password="password", database="sample",\
                                 auth_plugin="mysql_native_password")
