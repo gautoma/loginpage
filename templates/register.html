@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>User Create Account</title>
+</head>
+<body>
+
+    <br />
+    {% if error %}
+        <p>{{error}}</p>
+    {% endif %}
+
+    {% if msg %}
+        <h1>{{msg}}</h1>
+    {% endif %}
+    <form action="/register" method="post">
+        <div>
+            <label>firstname</label>
+            <input type="text" name="firstname" />
+        </div>
+        <div>
+            <label>lastname</label>
+            <input type="text" name="lastname" />
+        </div>
+        <div>
+            <label>email</label>
+            <input type="text" name="email" />
+        </div>
+        <div>
+            <label>password</label>
+            <input type="password" name="password" />
+        </div>
+        <div>
+            <label>confirmpassword</label>
+            <input type="password" name="confirmpassword" />
+        </div>
+        <div>
+            
+            <input type="submit" name="submit" value="Create Account" />
+        </div>
+        
+    </form>
+    <p>Already have an Account? <a href="/">Login Here</a></p>
+
+
+</body>
+</html>
